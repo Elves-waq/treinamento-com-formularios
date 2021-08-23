@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilo/css/style.css">
+
+</head>
+<div class="cadastro">
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for=""> Nome:<br />
+                <input type="text" name="nome" id="nome" required minlength="2" />
+            </label>
+            <label for="">
+                Email: <br />
+                <input type="email" name="emailCadastro" id="EmailCadasrto" required />
+            </label>
+            <label for="">
+                Data de Nascimento:<br>
+                <input type="date" name="dataNascimento" id="date" max="2021-08-23" />
+            </label>
+            <label for="">
+                Sexo: <br />
+                <select name="Sexo" id="Sexo_selection">
+                    <option value=""></option>
+                    <option value="masculino">masculino </option>
+                    <option value="feminino">feminino</option>
+                    <option value="naodefinido">outros</option>
+                </select>
+            </label>
+            <label for="">
+                Fale um pouco sobre voçê: <br />
+                <textarea name="diganos" id="Fale"></textarea>
+
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segurança</legend>
+            <label> Senha: <br />
+                <input type="password" name="senha1" id="senha1" required minlength="6" />
+            </label>
+
+            <label for="">
+                Confirme a Senha: <br />
+                <input type="password" name="senha2" id="senha2" required minlength="6" />
+
+            </label>
+
+            <label for="">
+                <input type="submit" value="cadastro" id="botao">
+            </label>
+        </fieldset>
+
+     </form>
+
+</div>
+
+</html>
